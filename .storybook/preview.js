@@ -1,6 +1,9 @@
+import { ThemeProvider } from 'styled-components'
 import { addDecorator } from '@storybook/react'
 import { withNextRouter } from 'storybook-addon-next-router'
-import GlobalStyles from '../src/styles/global'
+
+import GlobalStyles from 'styles/global'
+import theme from 'styles/theme'
 
 addDecorator(withNextRouter())
 
@@ -23,8 +26,11 @@ export const parameters = {
 export const decorators = [
   (Story) => (
     <>
-      <GlobalStyles />
-      <Story />
+      <ThemeProvider theme={theme}>
+        <GlobalStyles removeBg />
+        <Story />
+      </ThemeProvider>
     </>
   )
 ]
+

@@ -3,11 +3,6 @@ export default {
     container: '130rem',
     gutter: '3.2rem'
   },
-
-  border: {
-    radius: '0.4rem'
-  },
-
   font: {
     family:
       "Poppins, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans- serif",
@@ -33,7 +28,7 @@ export default {
     bg: '#F7F9FB',
     green: '#02B033',
     gray: '#CECECE',
-    black20: '#747474',
+    grayDark: '#747474',
     orange: 'linear-gradient(215.49deg, #FFB75E 5.4%, #ED8F03 93.45%)'
   },
 
@@ -45,17 +40,5 @@ export default {
     large: '4.0rem',
     xlarge: '4.8rem',
     xxlarge: '5.6rem'
-  },
-
-  layers: {
-    base: 10,
-    menu: 20,
-    overlay: 30,
-    modal: 40,
-    alwaysOnTop: 50
-  },
-  transition: {
-    default: '0.3s ease-in-out',
-    fast: '0.1s ease-in-out'
   }
 } as const
