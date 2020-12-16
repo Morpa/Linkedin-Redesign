@@ -19,7 +19,11 @@ export default {
       huge: '5.2rem'
     }
   },
-
+  border: {
+    radius: '0.4rem',
+    doubleRadius: '0.8rem',
+    tripleRadius: '1.2rem'
+  },
   colors: {
     primary: 'linear-gradient(180deg, #0077B5 0%, #0E6795 100%)',
     blue: '#0275B1',
@@ -33,6 +37,7 @@ export default {
   },
 
   spacings: {
+    xxxsmall: '0.4rem',
     xxsmall: '0.8rem',
     xsmall: '1.6rem',
     small: '2.4rem',
