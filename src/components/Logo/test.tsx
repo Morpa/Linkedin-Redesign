@@ -15,4 +15,16 @@ describe('<Logo />', () => {
 
     expect(screen.queryByText(/linkedin/i)).not.toBeInTheDocument()
   })
+
+  it('should render logo whit premium color', () => {
+    renderWithTheme(<Logo premium />)
+
+    expect(screen.getByLabelText(/linkedin/i)).toHaveStyle({
+      color: '##D8C281'
+    })
+
+    expect(screen.getByLabelText(/linkedin/i)).toHaveStyle({
+      color: '##AC9B69'
+    })
+  })
 })

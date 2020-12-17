@@ -2,9 +2,10 @@ import * as S from './styles'
 
 export type LogoProps = {
   hideText?: boolean
+  premium?: boolean
 }
 
-const Logo = ({ hideText = false }: LogoProps) => (
+const Logo = ({ hideText = false, premium = false }: LogoProps) => (
   <S.Wrapper hideText={hideText}>
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -39,6 +40,12 @@ const Logo = ({ hideText = false }: LogoProps) => (
           y2="46"
           gradientUnits="userSpaceOnUse"
         >
+          {!!premium && (
+            <>
+              <stop stopColor="#D8C281" />
+              <stop offset="1" stopColor="#AC9B69" />
+            </>
+          )}
           <stop stopColor="#0077B5" />
           <stop offset="1" stopColor="#0E6795" />
         </linearGradient>
