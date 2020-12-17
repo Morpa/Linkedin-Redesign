@@ -1,9 +1,11 @@
 import Base from 'templates/Base'
 
+import Profile from 'templates/Profile'
+
 export default function Home() {
   return (
     <Base>
-      <h1>Profile</h1>
+      <Profile />
     </Base>
   )
 }
