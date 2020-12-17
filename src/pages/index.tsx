@@ -1,5 +1,9 @@
-import Main from 'components/Main'
+import Base from 'templates/Base'
 
 export default function Home() {
-  return <Main />
+  return (
+    <Base>
+      <h1>Profile</h1>
+    </Base>
+  )
 }

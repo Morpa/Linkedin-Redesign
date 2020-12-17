@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { useRouter } from 'next/router'
 import { MoreHoriz } from '@styled-icons/material-outlined'
 import { SearchAlt as SearchIcon } from '@styled-icons/boxicons-regular'
 import {
@@ -19,48 +18,21 @@ import TextField from 'components/TextField'
 import * as S from './styles'
 
 const Header = () => {
-  const { asPath } = useRouter()
-
   return (
     <S.Wrapper>
       <S.Content>
         <Logo hideText />
 
         <S.NavPages>
-          <MenuOptions
-            link="/"
-            linkName="Feed"
-            icon={<Rss />}
-            activeLink={asPath}
-          />
+          <MenuOptions link="/feed" linkName="Feed" icon={<Rss />} />
 
-          <MenuOptions
-            link="/network"
-            linkName="Network"
-            icon={<Users />}
-            activeLink={asPath}
-          />
+          <MenuOptions link="/network" linkName="Network" icon={<Users />} />
 
-          <MenuOptions
-            link="/jobs"
-            linkName="Jobs"
-            icon={<Briefcase />}
-            activeLink={asPath}
-          />
+          <MenuOptions link="/jobs" linkName="Jobs" icon={<Briefcase />} />
 
-          <MenuOptions
-            link="/chat"
-            linkName="Chat"
-            icon={<MessageSquare />}
-            activeLink={asPath}
-          />
+          <MenuOptions link="/chat" linkName="Chat" icon={<MessageSquare />} />
 
-          <MenuOptions
-            link="/notices"
-            linkName="Notices"
-            icon={<Bell />}
-            activeLink={asPath}
-          />
+          <MenuOptions link="/notices" linkName="Notices" icon={<Bell />} />
         </S.NavPages>
 
         <S.Search>
@@ -74,7 +46,7 @@ const Header = () => {
           />
           <S.Info>
             <strong>
-              <Link href="/profile">
+              <Link href="/">
                 <a>André Morpa</a>
               </Link>
             </strong>

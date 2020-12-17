@@ -29,7 +29,7 @@ exports[`<MenuOptions /> should render options correctly 1`] = `
   font-size: 1.4rem;
   line-height: 2.4rem;
   padding: 1.6rem 2.4rem 0.8rem 2.4rem;
-  color: #181818;
+  color: #0275B1;
 }
 
 .c0 strong {
@@ -44,6 +44,19 @@ exports[`<MenuOptions /> should render options correctly 1`] = `
 .c0:hover {
   color: #0275B1;
   cursor: pointer;
+}
+
+.c0:after {
+  content: '';
+  width: 8rem;
+  height: 0.1rem;
+  background: #0275B1;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  bottom: 0;
 }
 
 <a

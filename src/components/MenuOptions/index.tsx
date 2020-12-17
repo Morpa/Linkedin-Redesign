@@ -7,20 +7,14 @@ export type MenuOptionsProps = {
   link: string
   linkName: string
   icon?: React.ReactNode
-  activeLink?: string
 }
 
-const MenuOptions = ({
-  link,
-  linkName,
-  icon,
-  activeLink
-}: MenuOptionsProps) => {
+const MenuOptions = ({ link, linkName, icon }: MenuOptionsProps) => {
   const router = useRouter()
 
   return (
     <Link href={link} passHref prefetch={false}>
-      <S.Option isActive={activeLink === router.pathname}>
+      <S.Option isActive={link === router.pathname}>
         {!!icon && icon}
         <strong>{linkName}</strong>
       </S.Option>
