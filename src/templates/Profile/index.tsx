@@ -11,6 +11,8 @@ import TabArticles from 'components/TabArticles'
 
 import * as S from './styles'
 
+import mockProfile from './mockProfile'
+
 const Profile = () => (
   <Container>
     <S.ContentLeft>
@@ -25,26 +27,23 @@ const Profile = () => (
           </div>
         </S.WrapperButtons>
 
-        <S.Image src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1789&q=80" />
+        <S.Image src={mockProfile.cover} />
 
-        <Avatar
-          size="large"
-          img="https://avatars2.githubusercontent.com/u/15898709?s=400&u=86fabb155a6cbb5dc2be016ce890a81e583fdd10&v=4"
-        />
+        <Avatar size="large" img={mockProfile.avatar} />
 
         <S.ContentProfile>
           <S.Title>
             <p>
-              André Morpa
+              {mockProfile.name}
               <img src="/img/logoPremium.svg" alt="logo Premium" />
             </p>
             <S.Location>
               <Navigation />
-              <p>Porto, Portugal</p>
+              <p>{mockProfile.location}</p>
             </S.Location>
           </S.Title>
 
-          <S.Description>Front End Developer</S.Description>
+          <S.Description>{mockProfile.job}</S.Description>
 
           <S.GroupButtons>
             <Button color="blue" size="large">
@@ -92,59 +91,15 @@ const Profile = () => (
           </Link>
         </S.Title>
 
-        <S.VisitorsWrapper>
-          <Avatar
-            img="https://images.unsplash.com/photo-1591361796603-01599a42e701?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MjJ8fGF2YXRhciUyMHdvbWFufGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
-            size="small"
-          />
-          <S.VisitorInfo>
-            <strong>Darlene Stone</strong>
-            <span>HR-Manager</span>
-          </S.VisitorInfo>
-        </S.VisitorsWrapper>
-
-        <S.VisitorsWrapper>
-          <Avatar
-            img="https://images.unsplash.com/photo-1565697451991-9c2bd0524fd2?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2815&q=80"
-            size="small"
-          />
-          <S.VisitorInfo>
-            <strong>Carrie Blackburn</strong>
-            <span>Tech Lead</span>
-          </S.VisitorInfo>
-        </S.VisitorsWrapper>
-
-        <S.VisitorsWrapper>
-          <Avatar
-            img="https://images.unsplash.com/photo-1573007974656-b958089e9f7b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2850&q=80"
-            size="small"
-          />
-          <S.VisitorInfo>
-            <strong>Leroy Rowland</strong>
-            <span>Product Designer</span>
-          </S.VisitorInfo>
-        </S.VisitorsWrapper>
-
-        <S.VisitorsWrapper>
-          <Avatar
-            img="https://images.unsplash.com/photo-1594106589088-9da303043b29?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2850&q=80"
-            size="small"
-          />
-          <S.VisitorInfo>
-            <strong>Garry Demon</strong>
-            <span>IOS Developer</span>
-          </S.VisitorInfo>
-        </S.VisitorsWrapper>
-        <S.VisitorsWrapper>
-          <Avatar
-            img="https://images.unsplash.com/photo-1590489148665-1ee3f0eb882b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"
-            size="small"
-          />
-          <S.VisitorInfo>
-            <strong>Bred Oliver</strong>
-            <span>Senior UX Designer</span>
-          </S.VisitorInfo>
-        </S.VisitorsWrapper>
+        {mockProfile.visitors.map((visitor, index) => (
+          <S.VisitorsWrapper key={`visitor-${visitor.name}-${index}`}>
+            <Avatar img={visitor.avatar} size="small" />
+            <S.VisitorInfo>
+              <strong>{visitor.name}</strong>
+              <span>{visitor.job}</span>
+            </S.VisitorInfo>
+          </S.VisitorsWrapper>
+        ))}
       </S.Visitors>
     </S.ContentRight>
   </Container>
