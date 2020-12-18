@@ -37,5 +37,22 @@ export default {
       avatar:
         'https://images.unsplash.com/photo-1590489148665-1ee3f0eb882b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80'
     }
+  ],
+  courses: [
+    {
+      name: 'Next.js',
+      thumb: '/img/course1.png',
+      views: '27,959 views'
+    },
+    {
+      name: 'React Tips',
+      thumb: '/img/course2.png',
+      views: '7,959 views'
+    },
+    {
+      name: 'Styled Components',
+      thumb: '/img/course3.png',
+      views: '12,009 views'
+    }
   ]
 }

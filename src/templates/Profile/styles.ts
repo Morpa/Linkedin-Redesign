@@ -224,3 +224,31 @@ export const VisitorInfo = styled.div`
     }
   `}
 `
+
+export const CoursesTitle = styled(Title)`
+  ${({ theme }) => css`
+    font-size: ${theme.font.sizes.medium};
+    justify-content: center;
+    text-transform: uppercase;
+  `}
+`
+
+export const Courses = styled(Visitors)`
+  ${({ theme }) => css`
+    text-transform: uppercase;
+
+    img {
+      border-radius: ${theme.border.radius};
+    }
+
+    > a {
+      font-weight: 600;
+      color: ${theme.colors.blue};
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  `}
+`

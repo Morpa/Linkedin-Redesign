@@ -101,6 +101,23 @@ const Profile = () => (
           </S.VisitorsWrapper>
         ))}
       </S.Visitors>
+
+      <S.Courses>
+        <S.CoursesTitle>You may like these courses</S.CoursesTitle>
+
+        {mockProfile.courses.map((course, index) => (
+          <S.VisitorsWrapper key={`course-${course.name}-${index}`}>
+            <img src={course.thumb} alt={course.name} />
+            <S.VisitorInfo>
+              <strong>{course.name}</strong>
+              <span>{course.views}</span>
+            </S.VisitorInfo>
+          </S.VisitorsWrapper>
+        ))}
+        <Link href="/#">
+          <a>See all recomendations</a>
+        </Link>
+      </S.Courses>
     </S.ContentRight>
   </Container>
 )
