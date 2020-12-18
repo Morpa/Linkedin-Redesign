@@ -1,4 +1,3 @@
-import theme from 'styles/theme'
 import { renderWithTheme } from 'utils/tests/helpers'
 import { Container } from '.'
 
@@ -10,22 +9,16 @@ describe('<Container />', () => {
       </Container>
     )
 
-    expect(container.firstChild).toHaveStyleRule(
-      'max-width',
-      theme.grid.container
-    )
+    expect(container.firstChild).toHaveStyleRule('width: min(100%,108rem)')
 
     expect(container.firstChild).toMatchInlineSnapshot(`
       .c0 {
+        width: min(100%,108rem);
         margin: 12.8rem auto 3.2rem auto;
         display: grid;
         grid-template-columns: 76.6rem 29rem;
         gap: 4rem;
         position: relative;
-        width: 100%;
-        max-width: 130rem;
-        padding-left: calc(3.2rem / 2);
-        padding-right: calc(3.2rem / 2);
       }
 
       <div
