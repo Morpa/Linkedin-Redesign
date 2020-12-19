@@ -1,19 +1,25 @@
-<h1 align="center">Next Boilerplate</h1>
+<h1 align="center">Linkedin Redesign</h1>
+
+ UI by - [Dmitry Kargaev](https://www.behance.net/gallery/84838121/LinkedIn-Redesign-Free-Figma-Source-UXUI).
+
+The objective of this project is to apply my studies in NextJS.
+
+*PS:The project does not use dynamic data and not all functionality has been added
 
 <p align="center">
   <img alt="Made by" src="https://img.shields.io/badge/made%20by-Morpa%20-%2356BEB8">
 
-  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/morpa/Next-Boilerplate.svg?color=56BEB8">
+  <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/morpa/Linkedin-Redesign.svg?color=56BEB8">
 
-  <img alt="Code size" src="https://img.shields.io/github/languages/code-size/morpa/Next-Boilerplate.svg?color=56BEB8">
+  <img alt="Code size" src="https://img.shields.io/github/languages/code-size/morpa/Linkedin-Redesign.svg?color=56BEB8">
 
-  <img alt="Github top language" src="https://img.shields.io/github/languages/top/Morpa/Next-Boilerplate?color=56BEB8">
+  <img alt="Github top language" src="https://img.shields.io/github/languages/top/Morpa/Linkedin-Redesign?color=56BEB8">
 
-  <img alt="Github language count" src="https://img.shields.io/github/languages/count/Morpa/Next-Boilerplate?color=56BEB8">
+  <img alt="Github language count" src="https://img.shields.io/github/languages/count/Morpa/Linkedin-Redesign?color=56BEB8">
 
-  <img alt="Repository size" src="https://img.shields.io/github/repo-size/Morpa/Next-Boilerplate?color=56BEB8">
+  <img alt="Repository size" src="https://img.shields.io/github/repo-size/Morpa/Linkedin-Redesign?color=56BEB8">
 
-  <img alt="License" src="https://img.shields.io/github/license/Morpa/Next-Boilerplate?color=56BEB8">
+  <img alt="License" src="https://img.shields.io/github/license/Morpa/Linkedin-Redesign?color=56BEB8">
 
   <img alt="CI" src="https://github.com/Morpa/boilerplate/workflows/ci/badge.svg?color=56BEB8">
 
