@@ -6,4 +6,8 @@ export default {
   component: TabProfile
 } as Meta
 
-export const Default: Story = () => <TabProfile />
+export const Default: Story = () => (
+  <div style={{ maxWidth: '80rem', margin: 'auto' }}>
+    <TabProfile />
+  </div>
+)
